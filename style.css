@@ -1,0 +1,270 @@
+/* home page */
+body{
+  background-color:#D7EAF3;
+  margin: 0px;
+}
+.heading{
+  color: #CE9F9F;
+  text-align: center; 
+  text-shadow: 2px 1px #ffffff;
+}
+.welcome {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  width: 80%;
+}
+
+/* home page buttons w/ images */
+.buttons-container {
+  display: flex;
+  justify-content: center; 
+  justify-content: space-evenly;
+}
+.clothingbtn,.accessoriesbtn,.restaurantsbtn,.othersbtn {
+  background-color: transparent;
+  border: 0px;
+  box-shadow: 12px 12px 2px 0px rgba(138, 166, 219, 0.2);
+}
+.clothingbtn:hover,.accessoriesbtn:hover,.restaurantsbtn:hover,.othersbtn:hover {
+  cursor: pointer;
+}
+
+/* about page with descriptions*/
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 350px;
+}
+.banner{
+  text-align: center;
+  color: #5c8fec;
+}
+.about-heading {
+  text-align: left;
+  color: #CE9F9F;
+  font-size: 25px;
+}
+.about-description {
+  text-align: left;
+  color: #14397D;
+  opacity: 50%;
+  font-size: 18px;
+}
+ul {
+  color: #14397D;
+  opacity: 50%;
+  font-size: 18px;
+} 
+
+/* for the nav bar */
+nav {
+  background-color: #77B5D9;
+  padding: 10px;
+  list-style-type: none;
+}
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+}
+.nav-links a{
+  font-family: Monaco;
+  list-style: none;
+  color: #14397D;
+  padding: 0px 10px;
+  letter-spacing: 1px;
+  font: 18px;
+  text-decoration: none;
+}
+.nav-links a:hover{
+  color: #D7EAF3;
+}
+
+/* dropdown menu for shops */
+.dropbtn {
+  background-color: #77B5D9;
+  color: #14397D;
+  font-size: 16px;
+  font-family: Monaco;
+  border: none;
+}
+.dropbtn:hover{
+  cursor: pointer;
+}
+.dropbtn:hover, .dropbtn:focus {
+  color: rgb(215, 234, 243);
+}
+.dropdown {
+  position: relative;
+  display: block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #77B5D9;
+  opacity: 95%;
+  z-index: 1; 
+}
+.dropdown-content a {
+  color: #14397D;
+  font-size: 8px;
+  text-decoration: none;
+  text-align: left;
+  padding: 17px 8px;
+  display: block;
+}
+.show {
+  display: block;
+}
+
+/* for the shops pages */
+.shops-layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+img {
+  width: 200px;
+  height: 200px;
+}
+article {
+  text-align: center;
+  padding: 25px 25px 10px 25px;
+  border: 5px solid white;
+  margin: 20px;
+  max-width: 200px;
+}
+.smallbiz-name {
+  color: #14397D;
+  text-align: center;
+  font-family: Lucida Console;
+}
+.smallbiz-description, .price {
+  color: #77B5D9;
+  text-align: left;
+  font-family: Lucida Console;
+  font-size: 12px;
+}
+.smallbiz-description a {
+  color: #77B5D9;
+  text-decoration: none;
+}
+
+/* for map title */
+.mapTitle {
+  text-align: center;
+  color: #5c8fec;
+}
+
+ol {
+  color: #77B5D9;
+  font-size: 20px;
+}
+
+.form-container{
+  display: flex;
+  justify-content: center;
+  margin: 0px 250px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.submitbtn {
+  color: #77B5D9;
+  font-size: 18px;
+  border-color: white;
+  background-color: white;
+}
+
+#result {
+  color: #77B5D9;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+  letter-spacing: 1px;
+}
+
+/* codes that been commented out */
+/* .container{
+  display:flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin:250px;
+  padding:5px;
+  object-fit:fill; 
+} */
+
+
+/* nav {
+  display: flex;
+  justify-content: center;
+  background-color: #78A2CC;
+  padding: 1%;
+  border-radius: 5px;
+  width:70%;
+  margin: auto;
+}
+
+.nav-bar{
+  display: flex;
+  background-color: #77B5D9;
+  Padding: 10px; 
+
+ .nav-links{
+  padding: 1%;
+  margin-left: 2%;
+  margin-right: 2%;
+  background-color: #5C8FEC;
+  list-style: none;
+}  
+
+a{
+  text-decoration: none;
+} */
+
+/* .nav-bar:hover, .nav-bar:focus{
+  color: rgb(215, 234, 243);
+} */
+
+/* .home-page{
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-left: 2%;
+  margin-right: 2%;
+  background-color: #77B5D9;
+}
+.dropbtn{
+  padding-left: 3%;
+  padding-right: 3%;
+  margin-left: 2%;
+  margin-right: 2%;
+  background-color: #77B5D9;
+}
+.about-page{
+  padding-left: 3%;
+  padding-right: 3%;
+  margin-left: 2%;
+  margin-right: 2%;
+  background-color: #77B5D9;
+}
+.maps-page{
+  padding-left: 3%;
+  padding-right: 3%;
+  margin-left: 2%;
+  margin-right: 2%;
+  background-color: #77B5D9;
+} */
+
+/* quiz */
+/* #afterSubmit{
+  visibility: hidden;
+}
+
+input{
+  justify-content: center;
+} */

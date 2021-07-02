@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Maps</title>
+    <link href="../style.css" rel="stylesheet" type="text/css"/>
+    <!-- CSS Style for the Map -->
+    <style>
+      #map {
+        height: 500px;
+        width: 500px;
+      }
+      .map-container {
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <nav class="nav-bar">
+      <li class="nav-links">
+        <a href="../index.html" class="home-page"> Home </a>
+        <a href="about.html" class="about-page"> About </a>
+        <div class = "shops">
+          <button class = "dropbtn">Shops</button>
+          <div class = "dropdown-content" id = "myDropdown">
+            <a href = "clothing.html" class = "clothing-page"> Clothing </a>
+            <a href = "accessories.html" class = "accessories-page"> Accessories </a>
+            <a href = "restaurants.html" class = "restaurant-page"> Restaurants </a>
+            <a href = "others.html" class = "others-page"> Others </a>
+          </div>
+        </div>
+        <a href="maps.html" class="maps-page"> Maps </a>
+        <a href = "quiz.html" class = "quiz-page"> Quiz </a>
+      </li>
+    </nav>
+    <h1 class = "mapTitle"> Map of Los Angeles! </h1>
+    <div class = "map-container">
+      <div id="map"></div>
+    </div>
+
+    <script src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyAQZhUNHsOMQXecef6ZxjwjWiIMitl2fTk&callback=initMap&libraries=&v=weekly" async></script>
+    <script src="../script.js"></script>
+
+  </body>
+</html>
+

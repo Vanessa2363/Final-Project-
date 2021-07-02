@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Quiz</title>
+    <link href="../style.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+  </head>
+
+  <body>
+    <!-- Navigation Code -->
+    <nav class="nav-bar">
+      <li class="nav-links">
+        <a href="../index.html" class="home-page"> Home </a>
+        <a href="about.html" class="about-page"> About </a>
+        <div class = "shops">
+          <button class = "dropbtn">Shops</button>
+          <div class = "dropdown-content" id = "myDropdown">
+            <a href = "clothing.html" class = "clothing-page"> Clothing </a>
+            <a href = "accessories.html" class = "accessories-page"> Accessories </a>
+            <a href = "restaurants.html" class = "restaurant-page"> Restaurants </a>
+            <a href = "others.html" class = "others-page"> Others </a>
+          </div>
+        </div>
+        <a href="maps.html" class="maps-page"> Maps </a>
+        <a href = "quiz.html" class = "quiz-page"> Quiz </a>
+      </li>
+    </nav>
+
+    <!-- Interactive Quiz -->
+    <div class = "banner"> 
+      <h1 class = "banner-text"> Shops Generator! </h1>
+    </div>
+    
+    <!-- Form Questions -->
+    <div class = "form-container">
+      <ol>
+        <li>What are you looking to buy?</li>
+          <input type = "radio" name = "question1" value = "clothingQuiz"> Clothing <br>
+          <input type = "radio" name = "question1" value = "accessoriesQuiz"> Accessories <br>
+          <input type = "radio" name = "question1" value = "restaurantsQuiz"> Restaurants <br>
+          <input type = "radio" name = "question1" value = "otherQuiz"> Other <br>
+        <li>What is your price range?</li>
+          <input type = "radio" name = "question2" value = "lowCost"> $ <br>
+          <input type = "radio" name = "question2" value = "mediumCost"> $$ <br>
+          <input type = "radio" name = "question2" value = "highCost"> $$$ <br>
+      </ol>
+    </div>
+
+    <!-- Submit Button -->
+    <div class = "btn-container">
+      <button class = "submitbtn" type = "button" onclick = "submitQuiz()"> Click Here To Get Small Businesses Suggested Only To You! </button>
+    </div>
+    <div id="result"></div>
+
+    <!-- CSS Style -->
+    <style>
+      #mc{
+        padding-left: 490px;
+      }
+    </style>
+
+    <!-- <div id = "afterSubmit">
+      <p id = "quizResults"> You should try </p>
+    </div> -->
+    <script src="../script.js"></script>
+  </body>
+</html>

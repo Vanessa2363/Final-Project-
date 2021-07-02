@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>SHOP SMALL</title>
+
+    <!--Links style.css to HTML-->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <!--Links jQuery library to HTML-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+  </head>
+
+  <body>
+	  <!-- Navigation Bar for Different Pages -->
+    <nav class="nav-bar">
+      <li class="nav-links">
+        <a href="index.html" class="home-page"> Home </a>
+        <a href="htmlFiles/about.html" class="about-page"> About </a>
+        <div class="shops">
+          <button class = "dropbtn">Shops</button>
+          <div class = "dropdown-content" id = "myDropdown">
+            <a href = "htmlFiles/clothing.html" class = "clothing-page"> Clothing </a>
+            <a href = "htmlFiles/accessories.html" class = "accessories-page"> Accessories </a>
+            <a href = "htmlFiles/restaurants.html" class = "restaurant-page"> Restaurants </a>
+            <a href = "htmlFiles/others.html" class = "others-page"> Others </a>
+          </div>
+        </div>
+        <a href = "htmlFiles/maps.html" class = "maps-page"> Maps </a>
+        <a href = "htmlFiles/quiz.html" class = "quiz-page"> Quiz </a>
+      </li>
+    </nav>
+
+    <!-- Home Page Design -->
+    <img class= "welcome" src="Assets/cover-photo.png" alt="welcome">
+    <h2 class= "heading" >Shop Small - The website to explore small businesses in Los Angeles! </h2>
+    <!-- Image Buttons Redirecting to Shops Pages -->
+    <div class = "buttons-container">
+      <button class = "clothingbtn"> <img src ="Assets/clothing.png"> </button>
+      <button class = "accessoriesbtn"> <img src ="Assets/accessories.png"> </button>
+      <button class = "restaurantsbtn"> <img src ="Assets/restaurants.png"> </button>
+      <button class = "othersbtn"> <img src ="Assets/others.png"> </button>
+    </div>
+
+    <!--Links script.js to HTML. Do not code below this line-->
+    <script src="script.js"></script>
+  </body>
+</html>
